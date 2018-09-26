@@ -4,9 +4,10 @@
 	define ('DB_Password','123456');
 
 	$conn = mysqli_connect(DB_Host,DB_User,DB_Password,'hotel');
+
 	if(!$conn){
 		die("connection error".mysql_error());
-		$dbcr="create database registration";
+		$dbcr="create database hotel";
 		if(!(mysqli_query($conn,$dbcr))){
 			echo "Error creating the Database";
 		}
